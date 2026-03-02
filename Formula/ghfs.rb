@@ -1,25 +1,25 @@
 class Ghfs < Formula
   desc "Mount GitHub repositories as a local filesystem"
   homepage "https://github.com/rgodha24/ghfs"
-  version "0.0.2"
+  version "0.0.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rgodha24/ghfs/releases/download/v0.0.2/ghfs-aarch64-apple-darwin.tar.xz"
-      sha256 "76e847b6cbeaf7e2692c2e0c234302333cb81236b595c4be25c7b58117875d8a"
+      url "https://github.com/rgodha24/ghfs/releases/download/v0.0.3/ghfs-aarch64-apple-darwin.tar.xz"
+      sha256 "db582f4cb9226327580b181ce2cc98f2a5d58d8732af5afb2726052088c96a25"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rgodha24/ghfs/releases/download/v0.0.2/ghfs-x86_64-apple-darwin.tar.xz"
-      sha256 "7c0aa969889bbedf038c86ea8e453f2a89b5872d0a737de7e26f95a0bf5e6701"
+      url "https://github.com/rgodha24/ghfs/releases/download/v0.0.3/ghfs-x86_64-apple-darwin.tar.xz"
+      sha256 "e0db7cd5f4d321531a087420962f15919a4a2de277dc76f6be640651afe37f75"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rgodha24/ghfs/releases/download/v0.0.2/ghfs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cefa3cca5672a64b3b9e2d64fd27f07c226104ad1b77a351edf42351cfa75d89"
+      url "https://github.com/rgodha24/ghfs/releases/download/v0.0.3/ghfs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "983733816a8eccc6af6e384b6bfdeed87234f145658cd95c466d470422341957"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rgodha24/ghfs/releases/download/v0.0.2/ghfs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3af014c08de3600d3ffceeacc6bc3477ba4f054feb80c59331ed52da907c6f22"
+      url "https://github.com/rgodha24/ghfs/releases/download/v0.0.3/ghfs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "023e83b759b37783ebc943771968d09eafa5bcb5341c99c37c0d0dce5605691e"
     end
   end
   license "MIT"
